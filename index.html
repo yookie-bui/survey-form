@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Yookie WeStu survey form</h1>
+        <p id="description"><i>Thank you for taking time to help me improve the demo.</i></p>
+    </header>
+    <form id="survey-form">
+        <div class="survey-question">
+            <label for="name-label" id="name-label" class="question-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required=True>
+        </div>
+        <div class="survey-question">
+            <label for="email" id="email-label" class="question-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required=True>
+        </div>
+        <div class="survey-question">
+            <label for="number" id="number-label" class="question-label">Age (optional)</label>
+            <input type="number" id="number" name="age" placeholder="Enter your age" require=True min=0 max=100>
+        </div>
+        <div class="survey-question">
+            <label for="dropdown" class="question-label">What do you like about this demo?</label>
+            <select id="dropdown" name="functions">
+                <option value="">Please select an option</option>
+                <option value="color">Color</option>
+                <option value="interaction">User Interaction</option>
+                <option value="Layout">Layout</option>
+            </select>
+        </div>
+        <div class="survey-question">
+            <label class="question-label">What is your opinion about this demo in general?</label>
+            <div id="multiple-choice">
+                <input type="radio" id="excelent" name="rate" value="excelent" checked>
+                <label for="excelent" id="multiple-choice-label">Excelent</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="radio" id="good" name="rate" value="good">
+                <label for="good" id="multiple-choice-label">Good</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="radio" id="average" name="rate" value="average">
+                <label for="average" id="multiple-choice-label">Average</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="radio" id="bad" name="rate" value="bad">
+                <label for="bad" id="multiple-choice-label">Bad</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="radio" id="badbad" name="rate" value="badbad">
+                <label for="badbad" id="multiple-choice-label">Go and learn about web-dev again, please</label>
+            </div>
+        </div>
+        <div class="survey-question">
+            <label class="question-label">Which aspect of this demo that you think should be improve? <i>(Check all that
+                    apply)</i></label>
+            <div id="multiple-choice">
+                <input type="checkbox" id="color" name="color" value="color">
+                <label for="color" id="multiple-choice-label">Color</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="checkbox" id="content" name="content" value="content">
+                <label for="content" id="multiple-choice-label">Cotent</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="checkbox" id="interact" name="interact" value="interact">
+                <label for="interact" id="multiple-choice-label">User Interact</label>
+            </div>
+            <div id="multiple-choice">
+                <input type="checkbox" id="function" name="function" value="function">
+                <label for="function" id="multiple-choice-label">Web Functions</label>
+            </div>
+        </div>
+        <div class="survey-question suggestion">
+            <label for="suggestion" class="question-label">Any comments or suggestions?</label>
+            <textarea id="suggestion" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <input type=submit id="submit">
+    </form>
+
+</body>
+
+</html>

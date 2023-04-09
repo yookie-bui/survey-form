@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: url("./image/background.jpg");
+    font-family: system-ui, sans-serif;
+}
+
+form {
+    background-color: #fffefc;
+    width: 80%;
+    height: 100%;
+    border: solid 1px #bebebe;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label {
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+}
+
+.question-label {
+    padding-bottom: 8px;
+}
+
+input,
+select {
+    height: 3em;
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+    padding-left: 0.5em;
+}
+
+textarea {
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+    padding-left: 0.5em;
+}
+
+.survey-question {
+    display: grid;
+    margin-bottom: 2em;
+}
+
+#multiple-choice {
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+#multiple-choice-label {
+    margin-left: 0.3em;
+}
+
+.survey-question.suggestion {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#submit {
+    background-color: #37af65;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+    border: solid 0.08em white;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-top: 2em;
+}
